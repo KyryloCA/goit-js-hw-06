@@ -10,8 +10,19 @@ let currentTextLength = 0;
 inputField.addEventListener('blur', (el)=> {
     
     // красим рамочки
-    if (el.currentTarget.textLength !== 6) {if(classCollection.contains("valid")){classCollection.remove("valid");};classCollection.add("invalid");}
-    else {if(classCollection.contains("invalid")){classCollection.remove("invalid");};classCollection.add("valid");}
+    if (el.currentTarget.textLength !== 6) 
+        {
+        if(classCollection.contains("valid"))
+            {
+            classCollection.remove("valid");
+            };
+        classCollection.add("invalid");
+        } else {if(classCollection.contains("invalid"))
+                    {
+                        classCollection.remove("invalid");
+                    };
+                    classCollection.add("valid");
+                } 
 } );
 
 

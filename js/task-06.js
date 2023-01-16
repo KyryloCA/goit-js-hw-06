@@ -8,10 +8,10 @@ let currentTextLength = 0;
 
 // анализируем ввод
 inputField.addEventListener('blur', (el)=> {
-    
+
     // красим рамочки
-    if (el.currentTarget.textLength !== 6) 
-        {
+    if (inputField.value.length !== 6) 
+        {            
         if(classCollection.contains("valid"))
             {
             classCollection.remove("valid");
